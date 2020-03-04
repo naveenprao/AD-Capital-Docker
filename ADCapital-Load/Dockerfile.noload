@@ -17,8 +17,8 @@ ENV GRADLE_HOME /opt/gradle-2.1
 ENV PATH $PATH:$GRADLE_HOME/bin
 
 # Clone source repo from GitHub
-RUN git clone --single-branch --branch nrao-extra-load https://github.com/naveenprao/AD-Capital-Load.git
-#RUN git clone https://github.com/Appdynamics/AD-Capital-Load.git
+#RUN git clone --single-branch --branch nrao-extra-load https://github.com/naveenprao/AD-Capital-Load.git
+RUN git clone https://github.com/Appdynamics/AD-Capital-Load.git
 
 ENV LOAD_GEN_PROJECT /AD-Capital-Load
 RUN cd ${LOAD_GEN_PROJECT}; gradle distZip

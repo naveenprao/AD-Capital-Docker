@@ -13,8 +13,8 @@ services:
     build:
       context: .
       args:
-        MACHINE_AGENT_ZIP:
-        MACHINE_AGENT_SHA256:
+        MACHINE_AGENT_ZIP: ./MachineAgent-4.5.18.2430.zip
+        MACHINE_AGENT_SHA256: 48e60a0a8d3452fdf2386049268647dce25c5ba175138138e7b023b9f69fafc6
     image: appdynamics/appdynamics-monitor
     environment:
       APPD_DOCKER_VISIBILITY: "true"
